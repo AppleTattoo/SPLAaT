@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/StudAttFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Attendance"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWeeklyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="69dp"
+        android:gravity="center"
+        android:text="Your weekly attendance is:"
+        app:layout_constraintStart_toStartOf="@+id/tvDailyText"
+        app:layout_constraintTop_toBottomOf="@+id/StudAttFrag" />
+
+    <TextView
+        android:id="@+id/tvWeeklyVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="0%"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWeeklyText" />
+
+    <TextView
+        android:id="@+id/tvDailyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:gravity="center"
+        android:text="Today's current attendance is:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWeeklyVal" />
+
+    <TextView
+        android:id="@+id/tvDailyVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="0%"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDailyText" />
+
+
+</android.support.constraint.ConstraintLayout>

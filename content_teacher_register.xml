@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.alex_.splaat.TeacherRegister"
+    tools:showIn="@layout/activity_teacher_register">
+
+
+    <TextView
+        android:id="@+id/teacherFName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="30dp"
+        android:text="First Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/teacherSName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="30dp"
+        android:text="Surname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacherFName" />
+
+    <TextView
+        android:id="@+id/teacherEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="30dp"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacherSName" />
+
+    <TextView
+        android:id="@+id/teacherViewName"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="30dp"
+        android:text="Known as"
+        app:layout_constraintStart_toStartOf="@+id/teacherEmail"
+        app:layout_constraintTop_toBottomOf="@+id/teacherEmail" />
+
+    <EditText
+        android:id="@+id/editTextTeachName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/teacherFName"
+        app:layout_constraintEnd_toEndOf="@+id/teacherFName"
+        app:layout_constraintStart_toStartOf="@+id/teacherFName" />
+
+    <EditText
+        android:id="@+id/editTextTeachSName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Surname"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTeachEmail"
+        app:layout_constraintEnd_toEndOf="@+id/teacherSName"
+        app:layout_constraintStart_toStartOf="@+id/teacherSName"
+        app:layout_constraintTop_toBottomOf="@+id/teacherFName" />
+
+    <EditText
+        android:id="@+id/editTextTeachEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="80dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email Address"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTeachKnownAs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/teacherEmail"
+        app:layout_constraintTop_toBottomOf="@+id/teacherSName" />
+
+    <EditText
+        android:id="@+id/editTextTeachKnownAs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="E.g. Mr. Smith"
+        app:layout_constraintBaseline_toBaselineOf="@+id/teacherViewName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/teacherViewName" />
+
+    <Button
+        android:id="@+id/buttonTeacherSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="Submit Details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTeachKnownAs" />
+</android.support.constraint.ConstraintLayout>

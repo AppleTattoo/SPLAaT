@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.alex_.splaat.StudentRegister"
+    tools:showIn="@layout/activity_student_register">
+
+    <TextView
+        android:id="@+id/studentFName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="30dp"
+        android:text="First Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/studentSName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="30dp"
+        android:text="Surname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentFName" />
+
+    <TextView
+        android:id="@+id/studentEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="30dp"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentSName" />
+
+    <TextView
+        android:id="@+id/studentYear"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="30dp"
+        android:text="Year"
+        app:layout_constraintStart_toStartOf="@+id/studentEmail"
+        app:layout_constraintTop_toBottomOf="@+id/studentEmail" />
+
+    <EditText
+        android:id="@+id/editTextStudName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/studentFName"
+        app:layout_constraintEnd_toEndOf="@+id/studentFName"
+        app:layout_constraintStart_toStartOf="@+id/studentFName" />
+
+    <EditText
+        android:id="@+id/editTextStudSName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Surname"
+        app:layout_constraintBottom_toTopOf="@+id/editTextStudEmail"
+        app:layout_constraintEnd_toEndOf="@+id/studentSName"
+        app:layout_constraintStart_toStartOf="@+id/studentSName"
+        app:layout_constraintTop_toBottomOf="@+id/studentFName" />
+
+    <EditText
+        android:id="@+id/editTextStudEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="80dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email Address"
+        app:layout_constraintBottom_toTopOf="@+id/editTextStudYear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/studentEmail"
+        app:layout_constraintTop_toBottomOf="@+id/studentSName" />
+
+    <EditText
+        android:id="@+id/editTextStudYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="(Insert single number)"
+        app:layout_constraintBaseline_toBaselineOf="@+id/studentYear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/studentYear" />
+
+    <Button
+        android:id="@+id/buttonStudentSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:onClick="onClick"
+        android:text="Submit Details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextStudYear" />
+</android.support.constraint.ConstraintLayout>

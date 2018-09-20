@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alex_.splaat.mainactivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <Button
+        android:id="@+id/buttonTeacher"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="TeacherButtonClicked"
+        android:text="@string/teacher" />
+
+    <Button
+        android:id="@+id/buttonParent"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/buttonTeacher"
+        android:layout_alignStart="@+id/buttonTeacher"
+        android:layout_below="@+id/buttonTeacher"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="ParentButtonClicked"
+        android:text="@string/parent" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="58dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/splaat"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonStudent"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/buttonParent"
+        android:layout_alignLeft="@+id/buttonParent"
+        android:layout_alignRight="@+id/buttonParent"
+        android:layout_alignStart="@+id/buttonParent"
+        android:layout_below="@+id/buttonParent"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="StudentButtonClicked"
+        android:text="@string/student" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:src="@android:drawable/ic_dialog_email" />
+
+</RelativeLayout>
